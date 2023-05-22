@@ -1,0 +1,59 @@
+{
+  "name": "list-calendar-v3",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fluentui/react-components": "^9.20.4",
+    "@microsoft/mgt": "^2.10.0",
+    "@microsoft/mgt-components": "^2.10.0",
+    "@microsoft/mgt-element": "^2.10.0",
+    "@microsoft/mgt-msal-provider": "^2.10.0",
+    "@microsoft/mgt-proxy-provider": "^2.10.0",
+    "@microsoft/mgt-react": "^2.10.0",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "adaptive-expressions": "^4.19.3",
+    "adaptivecards-react": "^1.1.1",
+    "adaptivecards-templating": "^2.3.1",
+    "custom-error": "^0.2.1",
+    "fluentui-react-grid": "^1.0.0",
+    "logging-library": "^0.5.0",
+    "path-browserify": "^1.0.1",
+    "polyfill": "^0.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-file-viewer": "^1.2.1",
+    "react-loading-skeleton": "^3.3.1",
+    "react-scripts": "5.0.1",
+    "scheduler": "^0.23.0",
+    "swiper": "^9.2.2",
+    "web-vitals": "^2.1.4",
+    "webpack": "^5.84.1",
+    "wp-webcomponent": "^1.0.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
