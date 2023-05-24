@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.fl-grid {
+  font-family: sans-serif;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin: auto px-to-rem(8);
+
+  /* > 1366 pixel */
+  column-gap: px-to-rem(32);
+  row-gap: px-to-rem(32);
+  /* < 1366 pixel */
+  @media screen and (max-width: 1366px) {
+    column-gap: px-to-rem(24);
+    row-gap: px-to-rem(24);
+  }
+  /* <= 640 pixel */
+  @media screen and (max-width: 640px) {
+    column-gap: px-to-rem(16);
+    row-gap: px-to-rem(16);
+  }
+}
+
+.fl-span12 {
+  @extend %gridContainer;
+  @include flUI-span(12);
+}
+.fl-span4{
+  @extend %gridContainer;
+  @include flUI-span(4);
+}
+
+.fl-span8{
+  @extend %gridContainer;
+  @include flUI-span(8);
+}
+.fl-span6c{
+  @extend %gridContainer;
+    @include flUI-span(6, 4, 3);
+}
